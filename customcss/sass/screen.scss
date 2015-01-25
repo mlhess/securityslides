@@ -1,0 +1,50 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "zen";
+
+
+$zen-column-count: 8;
+
+$zen-gutter-width: 10px;
+
+section {
+  @include zen-grid-container;
+}
+
+.left {
+  @include zen-grid-item(4, 1);
+}
+
+.right {
+  @include zen-grid-item(4, 5);
+
+}
+
+
+
+
+iframe {
+  width: 100%;
+  hight: 100%;
+}
+
+.reveal {
+  blockquote.long {
+    width: 90%;
+    font-size: 80%;
+  }
+}
+
+.verylong {
+  font-size:40%;
+}
+.reveal {
+.bottom {
+  bottom: 0px;
+  position: absolute;
+}
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Michigan Drupal Camp 2015</title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="customcss/css/screen.css">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>Drupal SA05 aka drupalgeddon</h2>
+
+            <h3>Michael Hess and Wayne Eaker</h3>
+
+        </section>
+
+        <section>
+            <h2>Michael Hess</h2>
+
+            <p>
+                Solutions architect at the University of Michigan.
+            </p>
+
+            <p>
+                Supports around 800 Drupal sites on the MSIS hosting platform.
+            </p>
+
+            <p>
+                Current Drupal Security Team Lead.
+            </p>
+            <h6><a href="https://twitter.com/mlh407">Twitter: @mlh407</a></h6>
+
+        </section>
+        <section>
+            <h2>Wayne Eaker</h2>
+
+            <p>
+            </p>
+
+            <p>
+            </p>
+
+            <p>
+            </p>
+            <h6><a href="https://twitter.com/X">Twitter: @X</a></h6>
+
+        </section>
+
+
+        <section id="fragments">
+            <h3>Was a site you work on compromised by SA05/drupalgeddon</h3>
+
+            <p>Please text us at X</p>
+            <table class="answertable sticky-enabled">
+                <thead>
+                <tr>
+                    <th>Answer Choice</th>
+                    <th>Text Code:</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="odd">
+                    <td>Yes</td>
+                    <td>9361</td>
+                </tr>
+                <tr class="even">
+                    <td>No</td>
+                    <td>8617</td>
+                </tr>
+                <tr class="odd">
+                    <td>Unsure</td>
+                    <td>5821</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3>Was a site you work on compromised by SA05/drupalgeddon</h3>
+
+            <p class="fragment">
+                <iframe src="https://respconf.sites.uofmhosting.net/node/75/graph" width="100%" height="900px"></iframe>
+            </p>
+
+        </section>
+
+        <section>
+            <h2> Security in Drupal</h2>
+
+            <p class="fragment">Drupal has a dedicated security team of 42 people around the world. </p>
+
+            <p class="fragment">The security team is a volunteer group. </p>
+
+            <p class="fragment">Our output is keeping Drupal Secure, and releasing SA's</p>
+        </section>
+        <section>
+            <h2>Security process</h2>
+            <ol>
+                <li>A Vulnerability is discovered in code</li>
+                <li>Issue is reported to the security team</li>
+                <li>Issue is confirmed a valid issue in a supported release eligibly for an SA</li>
+                <li> The security team and the maintainer of the code fix the issue</li>
+                <li>A Security advisory is written and the fix is published. Notications about the issue go out via
+                    twitter/rss/email
+                </li>
+            </ol>
+            <h2>Subscribe to the security team news letter via your newsletter pages on www.drupal.org/user</h2>
+        </section>
+        <section>
+            <h2> Do you already subscribe to the security team's newsletter/SA's</h2>
+
+            <h3> Text to: X</h3>
+            <table class="answertable sticky-enabled">
+                <thead>
+                <tr>
+                    <th>Answer Choice</th>
+                    <th>Code to text</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="odd">
+                    <td>Yes</td>
+                    <td>2177</td>
+                </tr>
+                <tr class="even">
+                    <td>No</td>
+                    <td>1819</td>
+                </tr>
+                <tr class="odd">
+                    <td>I read them on twitter</td>
+                    <td>4729</td>
+                </tr>
+                <tr class="even">
+                    <td>I do now</td>
+                    <td>3913</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2> Do you already subscribe to the security team's newsletter/SA's</h2>
+            <iframe src="https://respconf.sites.uofmhosting.net/node/76/graph" width="100%" height="900px"></iframe>
+        </section>
+
+        <section cite="https://www.owasp.org/index.php/Top10#OWASP_Top_10_for_2013">
+            <h3>Common Web Vulnerabilities</h3>
+            <h4>from Open Web Application Security Project</h4>
+            <ol>
+                <li>Injection such as SQL, OS, and LDAP injection</li>
+                <li>Broken Authentication and Session Management</li>
+                <li>Cross-Site Scripting (XSS)</li>
+                <li>Insecure Direct Object References *</li>
+                <li>Security Misconfiguration</li>
+                <li>Sensitive Data Exposure</li>
+                <li>Missing Function Level Access Control (access bypass)</li>
+                <li>Cross-Site Request Forgery</li>
+                <li>Using Components with Known Vulnerabilities</li>
+                <li>Unvalidated Redirects and Forwards</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Using Components with Known Vulnerabilities</h2>
+
+            <p>Do you use third-party libraries</p>
+        </section>
+
+        <section>
+            <h2> Common Drupal Vulnerabilities from 2014</h2>
+            <img src="images/michigan/vulns-2014">
+            <ol>
+                <li>61 - Cross Site Scripting</li>
+                <li>42 - Access bypass</li>
+                <li>13- Information Disclosure</li>
+                <li>4 - Cross Site Request Forgery</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2> SA05/drupalgeddon</h2>
+        </section>
+        <section>
+            <h2> What is SQL injection?</h2>
+            <blockquote cite="https://www.owasp.org/index.php/SQL_Injection" class="long">
+                A SQL injection attack consists of insertion or "injection" of a SQL query via the input data from the
+                client to the application. A successful SQL injection exploit can read sensitive data from the database,
+                modify database data (Insert/Update/Delete), execute administration operations on the database (such as
+                shutdown the DBMS), recover the content of a given file present on the DBMS file system and in some
+                cases issue commands to the operating system. SQL injection attacks are a type of injection attack, in
+                which SQL commands are injected into data-plane input in order to effect the execution of predefined SQL
+                commands.
+            </blockquote>
+        </section>
+        <section>
+            <h2> So?</h2>
+
+            <p>SQL injection lets an attacker have the same access to your database that Drupal has. </p>
+
+            <p class="fragment">Allows an attacker to add a user and modify user's roles. </p>
+
+            <p class="fragment">Allows an attacker to change passwords/email addresses </p>
+
+            <p class="fragment">Allows an attacker to update URL's to payment pages </p>
+
+            <p class="fragment">Allows an attacker to change content. </p>
+
+            <p class="fragment">Anything that can be done via the web interface an attacker can do.</p>
+        </section>
+        <section>
+            <h2> SQL Injection is easy to exploit.</h2>
+
+            <p> Most of the time sql injection is easy to exploit.</p>
+
+            <p>Other vulnerabilities may require different actors to engage in actions timed correctly</p>
+
+            <p> SQL injection, can be exploited most of the time, by just an attacker.</p>
+        </section>
+        <section>
+            <h2>Drupal's database API</h2>
+
+            <p>When used correctly, the database API, prevents sql injection </p>
+
+            <p class="fragment">In the case of SA05/drupalgeddon, the database api is where the vulnerability was.</p>
+
+            <p class="fragment">Oh the irony.</p>
+
+           					<pre class="fragment">
+                                <code data-trim contenteditable>
+ - foreach ($data as $i => $value) {
++ foreach (array_values($data) as $i => $value) {
+                            </code>
+                           </pre>
+
+        </section>
+        <section>
+            <h2>For non coders:</h2>
+            <p> The value of a form field was sanitized to prevent sql injection, but the field name was not. </p>
+        </section>
+        <section>
+            <h2>Common attack patterns</h2>
+            <p>Changing password or email address on uid=1</p>
+            <p>Adding files to the file system via the menu_router table and file_put_contents</p>
+            <p>Adding a user with and giving it admin access </p>
+            <p>Installing a PHP backdoor by enabling the php module and create a node with php in it.</p>
+            <p>Many, Many More</p>
+        </section>
+        <section>
+            <h2> Code examples</h2>
+            <h4>From Acquia</h4>
+            <p>		<pre class="fragment">
+                                <code data-trim contenteditable>
+                                    update users set name='admin' , pass = '$S$CTo
+                                    9G7Lx2rJENglhirA8oi7v9LtLYWFrGm.F.0Jurx3aJAmSJ53g' where uid = '1';
+                </code>
+            </pre>
+            </p>
+            <p>		<pre class="fragment">
+                                <code data-trim contenteditable>
+                                    set @a=(SELECT MAX(uid) FROM users)+1;INSERT IN
+                                    TO users set uid=@a,status=1,name='n0n0x' , pass = '$S$CTo9G7Lx2jmHrpHDdKDR0R8X/
+                                    q4H9PXo02REYap3z2t8UE3F0DfC';INSERT INTO users_roles set uid=@a,rid=3;
+                                </code>
+            </pre>
+            </p>
+            <p>		<pre class="fragment">
+                                <code data-trim contenteditable>
+                                    update {users} set mail='[EMAIL_ADDRESS]' where uid=1;
+
+
+                                </code>
+            </pre>
+            </p>
+            <p>		<pre class="fragment">
+                                <code data-trim contenteditable>
+                                    INSERT INTO `menu_router` (`path`, `load_functions`, `to_arg_functions`, `description`, `access_callback`, `access_arguments`)
+                                    VALUES ('mziogj', '', '', 'mziogj', 'file_put_contents',’[TROJAN]’);
+                                </code>
+            </pre>
+            </p>
+        </section>
+        
+
+    </div>
+</div>
+
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>
