@@ -319,7 +319,47 @@
             <p>For security, you can't check a list, and be done.</p>
             <p>You must keep working at it, it is a processes, not a one time task(s).</p>
             <img class="fragment" src="images/michigan/badmouth.jpg">
-            
+        </section>
+        <section>
+            <h2>Some best practice tips</h2>
+            <p>Only use encrypted protocols.</p>
+            <p>https/ftps/ssh/etc</p>
+            <p><b>Take and verify backups.</b></p>
+            <p>  Ever change you make might impact the security of your site, therefore, security needs to be in your workflow.</p>
+        </section>
+        <section>
+            <h2>Do not use shared hosting</h2>
+            <p> Use a dedicated Drupal hosting provider.  </p>
+            <p> Shared hosting normally runs the webserver as the owner of the file system (cpanel) </p>
+            <p> They sometimes use a common webserver user for all sites on a server</p>
+        </section>
+        <section>
+            <h2>Do Not use multi site</h2>
+            <p>Unless you have a deep understanding of apache/nginx and file permissions, multisite is  insecure. </p>
+        </section>
+        <section>
+            <h2>Use a module that enhancing security in your site</h2>
+            <p>Paranoia -- Locks your site down</p>
+            <p>Security Review -- Runs a checklist of items and confirms your site adheres to them</p>
+            <p>Permissions Lock -- finer grained permissions over what users with 'administer permissions' can do </p>
+            <p>Two Factor Authentication -- Something you know, and something you have</p>
+            <p>Hacked! -- Tells if code has been changed</p>
+            <p>Password policy -- enforces strong passwords</p>
+        </section>
+        <section>
+            <h3> Other security vulnerabilities</h3>
+            <p>While XSS/csrf/access bypass maybe harder to mass attack, an attacker can still compromise a site with them,
+                always do updates issued by the security team, and watch your input formats</p>
+            <img class="fragment" src="images/michigan/filtering_text.png">
+            <p class="fragment"> Details on these vulnerabilities are outside the scope of this </p>
+        </section>
+        <section>
+            <h2>Drupal 8</h2>
+            <p>There are many security enhancements in Drupal 8. </p>
+        </section>
+        <section>
+            <h1>Questions?</h1>
+            <p>Thank you for your time</p>
         </section>
     </div>
 </div>
