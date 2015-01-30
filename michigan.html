@@ -40,39 +40,13 @@
             </p>
             <h6><a href="https://twitter.com/mlh407">Twitter: @mlh407</a></h6>
         </section>
-
-        <section id="fragments">
-            <h3>Was a site you work on compromised by SA05/drupalgeddon?</h3>
-            <p>Please text: 734-821-5212</p>
-            <table class="answertable sticky-enabled">
-                <thead>
-                <tr>
-                    <th>Answer Choice</th>
-                    <th>Text Code:</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="odd">
-                    <td>Yes</td>
-                    <td>9361</td>
-                </tr>
-                <tr class="even">
-                    <td>No</td>
-                    <td>8617</td>
-                </tr>
-                <tr class="odd">
-                    <td>Unsure</td>
-                    <td>5821</td>
-                </tr>
-                </tbody>
-            </table>
-        </section>
         <section>
-            <h3>Was a site you work on compromised by SA05/drupalgeddon?</h3>
-            <p class="fragment">
-                <iframe src="https://respconf.sites.uofmhosting.net/node/75/graph" width="100%" height="900px"></iframe>
-            </p>
+            <h2>Agenda</h2>
+            <p>Overview of Drupal security and the Drupal security team</p>
+            <p>Overview of SA05/Drupalgeddon</p>
+            <p>Overview of best practices</p>
         </section>
+
         <section>
             <h2>Do You Brush Your Teeth Daily?</h2>
             <p>Please text: 734-821-5212</p>
@@ -90,6 +64,7 @@
             <h2> Security in Drupal</h2>
             <p class="fragment">Drupal has a dedicated Security Team of 42 people around the world. </p>
             <p class="fragment">The Security Team is a volunteer group. </p>
+            <p class="fragment">We:</p>
             <ul class="fragment">
                 <li>Resolve reported security issues in a Security Advisory</li>
                 <li>Provide assistance for contributed module maintainers in resolving security issues</li>
@@ -110,7 +85,7 @@
                     Twitter/RSS/email.
                 </li>
             </ol>
-            <h3>Subscribe to the Security Team newsletter via your newsletter pages on www.drupal.org/user.</h3>
+            <h3>Subscribe to the Security Team newsletter via "my newsletter" under edit on www.drupal.org/user.</h3>
         </section>
         <section>
             <h2> Do you already subscribe to the Security Team's newsletter/SA's?</h2>
@@ -144,12 +119,8 @@
                 </tr>
                 </tbody>
             </table>
+        </section>
 
-        </section>
-        <section>
-            <h2> Do you already subscribe to the Security Team's newsletter/SA's?</h2>
-            <iframe src="https://respconf.sites.uofmhosting.net/node/76/graph" width="100%" height="900px"></iframe>
-        </section>
 
         <section cite="https://www.owasp.org/index.php/Top10#OWASP_Top_10_for_2013">
             <h3>Common Web Vulnerabilities</h3>
@@ -169,7 +140,6 @@
         </section>
         <section>
             <h2>Using Components with Known Vulnerabilities</h2>
-
             <p>Do you use third-party libraries?</p>
         </section>
 
@@ -186,6 +156,38 @@
 
         <section>
             <h2> SA05/drupalgeddon</h2>
+        </section>
+        <section id="fragments">
+            <h3>Was a site you work on compromised by SA05/drupalgeddon?</h3>
+            <p>Please text: 734-821-5212</p>
+            <table class="answertable sticky-enabled">
+                <thead>
+                <tr>
+                    <th>Answer Choice</th>
+                    <th>Text Code:</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="odd">
+                    <td>Yes</td>
+                    <td>9361</td>
+                </tr>
+                <tr class="even">
+                    <td>No</td>
+                    <td>8617</td>
+                </tr>
+                <tr class="odd">
+                    <td>Unsure</td>
+                    <td>5821</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h3>Was a site you work on compromised by SA05/drupalgeddon?</h3>
+            <p class="fragment">
+                <iframe src="https://respconf.sites.uofmhosting.net/node/75/graph" width="100%" height="900px"></iframe>
+            </p>
         </section>
         <section>
             <h2> What is SQL Injection?</h2>
@@ -231,8 +233,10 @@
             <p class="fragment">In the case of SA05/drupalgeddon, the database API is where the vulnerability was.</p>
 
             <p class="fragment">Oh, the irony.</p>
-
-           					<pre class="fragment">
+            </section>
+            <section>
+                <h2>The patch</h2>
+           					<pre>
                                 <code data-trim contenteditable>
 - foreach ($data as $i => $value) {
 + foreach (array_values($data) as $i => $value) {
@@ -240,10 +244,10 @@
                            </pre>
 
         </section>
-        <section>
+      <!--  <section>
             <h2>For non-coders:</h2>
             <p> The value of a form field was sanitized to prevent SQL injection, but the field name was not. </p>
-        </section>
+        </section>-->
         <section>
             <h2>Common Attack Patterns</h2>
             <p>Changing password or email address on uid=1.</p>
@@ -335,8 +339,9 @@
             <p>
                 Blog vs. complex site. Your blog is likely to be compromised to send spam or to act in part of a bot net.
             </p>
-            <p> Your complex site might be compromised for the data it has.</p>
+            <p> Your complex site might be compromised for the data it has. </p>
             <p> Security is a balance.</p>
+            <P> Is your site a target?</P>
         </section>
         <section>
             <h2>Regulations</h2>
@@ -365,14 +370,11 @@
         <section>
             <h3> Other Security Vulnerabilities</h3>
             <p>While XSS/csrf/access bypass may be harder to mass attack, an attacker can still compromise a site with them.
-                Always do updates issued by the security team, and watch your input formats.</p>
+               The security team will release SA's on Wednesdays, set time aside to update your sites. </p>
             <img class="fragment" src="images/michigan/filtering_text.png">
             <p class="fragment"> Details on these vulnerabilities are outside the scope of this talk. </p>
         </section>
-        <section>
-            <h2>Drupal 8</h2>
-            <p>There are many security enhancements in Drupal 8. </p>
-        </section>
+
         <section>
             <h1>Questions?</h1>
             <p>Thank you for your time!</p>
