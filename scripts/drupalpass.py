@@ -1,3 +1,4 @@
+##Warning, don't use this code without understanding the legal implimentations. 
 import hashlib
 
 # Calculate a non-truncated Drupal 7 compatible password hash.

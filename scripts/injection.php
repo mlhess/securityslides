@@ -1,4 +1,6 @@
 <?php
+#Warning, don't use this code without understanding the legal implimentations.
+
 #-----------------------------------------------------------------------------#
 # Exploit Title: Drupal core 7.x - SQL Injection                              #
 # Date: Oct 16 2014                                                           #
