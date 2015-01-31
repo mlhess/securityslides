@@ -15,11 +15,10 @@
 </head>
 <body>
 
-
 <div class="reveal">
     <div class="slides">
         <section>
-            <h2>Drupal SA05 aka drupalgeddon</h2>
+            <h2>Drupal SA05 aka drupalgeddon </h2><h2>and other Drupal Security related topics</h2>
 
             <h3>Michael Hess</h3>
 
@@ -31,15 +30,21 @@
                 Current Drupal Security Team Lead.
             </p>
             <p>
-                Solutions architect at the University of Michigan.
+                Solutions architect lead at the University of Michigan.
             </p>
             <p>
-                Supports around 800 Drupal sites  at the University.
+                Supports around 900 Drupal sites  at the University.
             </p>
             <p>
-                Supports around 400 sites not related to the University.
+                Supports around 500 sites not related to the University.
             </p>
             <h6><a href="https://twitter.com/mlh407">Twitter: @mlh407</a></h6>
+            <aside class="notes">
+                 9 years in Drupal
+                 5 years on the secteam
+                 build/consult on  around 100 sites yearly
+                 drupal 4.6(ish)
+            </aside>
         </section>
         <section>
             <h2>Agenda</h2>
@@ -88,6 +93,7 @@
             </ol>
             <h3>Subscribe to the Security Team newsletter via "my newsletter" under edit on www.drupal.org/user.</h3>
         </section>
+       <!--
         <section>
             <h2> Do you already subscribe to the Security Team's newsletter/SA's?</h2>
 
@@ -121,7 +127,7 @@
                 </tbody>
             </table>
         </section>
-
+-->
 
         <section cite="https://www.owasp.org/index.php/Top10#OWASP_Top_10_for_2013">
             <h3>Common Web Vulnerabilities</h3>
@@ -255,6 +261,7 @@
             <p>Adding files to the file system via the menu_router table and file_put_contents.</p>
             <p>Adding a user and giving that user admin access.</p>
             <p>Installing a PHP backdoor by enabling the PHP module and creating a node with PHP in it.</p>
+            <p>Patching the vulnerability</p>
             <p>Many, many more ...</p>
         </section>
         <section>
@@ -328,8 +335,8 @@
             <p>Only use encrypted protocols.</p>
             <p>https/ftps/ssh/etc</p>
             <p>  Every change you make might impact the security of your site. Therefore, security needs to be in your workflow.</p>
+            <p>Use supported versions (Soon time to update Drupal 6)</p>
             <p><b>Take and verify backups.</b></p>
-
         </section>
         <section>
             <h1>Keep Your Site Updated</h1>
@@ -350,11 +357,12 @@
             <p>You might have legal requirements imposed by the data you keep.</p>
         </section>
         <section>
-            <h2>Do Not Use Shared Hosting</h2>
+            <h2>Do Not Use insecure hosting</h2>
             <p> Use a dedicated Drupal hosting provider.  </p>
             <p> Shared hosting normally runs the webserver as the owner of the file system (cpanel). </p>
-            <p> They sometimes use a common webserver user for all sites on a server.</p>
+            <p> Multiple sites on a server often use a common account for all sites. (www-data, nobody, etc)  </p>
         </section>
+
         <section>
             <h2>Do Not Use Multisite</h2>
             <p>Unless you have a deep understanding of apache/nginx and file permissions, multisite is  insecure. </p>
@@ -370,8 +378,8 @@
         </section>
         <section>
             <h3> Other Security Vulnerabilities</h3>
-            <p>While XSS/csrf/access bypass may be harder to mass attack, an attacker can still compromise a site with them.
-               The security team will release SA's on Wednesdays, set time aside to update your sites. </p>
+            <p>While XSS/CSRF/access bypass may be harder to mass attack, but an attacker can still compromise a site with them.
+               The security team  releases SA's on Wednesdays, set time aside to update your sites (or pay someoene to do it for you). </p>
             <img class="fragment" src="images/michigan/filtering_text.png">
             <p class="fragment"> Details on these vulnerabilities are outside the scope of this talk. </p>
         </section>
