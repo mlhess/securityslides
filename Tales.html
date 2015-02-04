@@ -4,81 +4,151 @@
     <title>Michigan Drupal Camp 2015</title>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/moon.css" id="theme">
     <link rel="stylesheet" href="customcss/css/screen.css">
     <link rel="stylesheet" href="lib/css/zenburn.css">
     <script src="js/jquery.min.js"></script>
-
 </head>
 <body>
 <div class="reveal">
     <div class="slides">
         <section>
-            <h2>Security Tales from the Field</h2><h2>and security best practices. </h2>
-            <h3>Michael Hess</h3>
+            <h2>Security Tales from the Field</h2>
+
+            <h2>and security best practices. </h2>
+
+            <p>Michael Hess</p>
+            <h4> Do you already subscribe to the Security Team's newsletter/SA's?</h4>
+
+            <p>Please text: 734-821-5212</p>
+            <table class="answertable sticky-enabled">
+                <thead>
+                <tr>
+                    <th>Answer Choice</th>
+                    <th>Code to text</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="odd">
+                    <td>Yes</td>
+                    <td>2177</td>
+                </tr>
+                <tr class="even">
+                    <td>No</td>
+                    <td>1819</td>
+                </tr>
+                <tr class="odd">
+                    <td>I read them on Twitter</td>
+                    <td>4729</td>
+                </tr>
+                <tr class="even">
+                    <td>I do now</td>
+                    <td>3913</td>
+                </tr>
+                </tbody>
+            </table>
+
         </section>
 
-            <section>
-                <h2>Michael Hess</h2>
-                <p>
-                    Current Drupal Security Team Lead.
-                </p>
-                <p>
-                    Solutions architect lead at the University of Michigan.
-                </p>
-                <p>
-                    Supports around 1200 Drupal sites.
-                </p>
+        <section>
+            <h2>Michael Hess</h2>
 
-                <h6><a href="https://twitter.com/mlh407">Twitter: @mlh407</a></h6>
-                <aside class="notes">
-                    9 years in Drupal
-                    5 years on the secteam
-                    build/consult on  around 100 sites yearly
-                    drupal 4.6(ish)
-                </aside>
-            </section>
+            <p>
+                Current Drupal Security Team Lead.
+            </p>
+
+            <p>
+                Solutions architect lead at the University of Michigan.
+            </p>
+
+            <p>
+                Supports around 1200 Drupal sites.
+            </p>
+
+            <h6><a href="https://twitter.com/mlh407">Twitter: @mlh407</a></h6>
+            <aside class="notes">
+                9 years in Drupal
+                5 years on the secteam
+                build/consult on around 100 sites yearly
+                drupal 4.6(ish)
+            </aside>
+        </section>
         <section>
             <h2>Agenda</h2>
+
             <p>The tale of the X</p>
+
             <p>The tale of the X</p>
+
             <p>The tale of the X</p>
+
             <p>The tale of the X</p>
+
             <p>Overview of Drupal security and the Drupal security team</p>
+
             <p>Overview of best practices</p>
         </section>
 
         <section>
             <h2>Do You Brush Your Teeth Daily?</h2>
+
             <p>Please text: 734-821-5212</p>
             <table class="answertable sticky-enabled">
-                <thead><tr><th>Answer Choice</th><th>Text Code:</th> </tr></thead>
+                <thead>
+                <tr>
+                    <th>Answer Choice</th>
+                    <th>Text Code:</th>
+                </tr>
+                </thead>
                 <tbody>
-                <tr class="odd"><td>Yes</td><td>4483</td> </tr>
-                <tr class="even"><td>No</td><td>2983</td> </tr>
-                <tr class="odd"><td>I don&#039;t have any. </td><td>6276</td> </tr>
+                <tr class="odd">
+                    <td>Yes</td>
+                    <td>4483</td>
+                </tr>
+                <tr class="even">
+                    <td>No</td>
+                    <td>2983</td>
+                </tr>
+                <tr class="odd">
+                    <td>I don&#039;t have any.</td>
+                    <td>6276</td>
+                </tr>
                 </tbody>
             </table>
             <h6> We will discuss this later.</h6>
         </section>
-        <section id="tale1">
+        <section>
+            <h2>On to the tales</h2>
 
+            <p> Please note, all details about the sites have been changed so they are not identifiable. </p>
+        </section>
+        <section id="tale1">
+            <!-- This will be filled in via jquery -->
         </section>
         <section id="tale2">
+            <!-- This will be filled in via jquery -->
 
         </section>
         <section id="tale3">
+            <!-- This will be filled in via jquery -->
 
         </section>
         <section id="tale4">
+            <!-- This will be filled in via jquery -->
 
         </section>
         <section id="best">
+            <!-- This will be filled in via jquery -->
 
         </section>
+        <section>
+            <h1>Questions?</h1>
 
+            <p>Thank you for your time!</p>
+        </section>
     </div>
 </div>
 
@@ -86,7 +156,7 @@
 <script src="js/reveal.js"></script>
 
 <script>
-    $( document ).ready(function() {
+    $(document).ready(function () {
         $.get('tales/tale1.html', function (data) {
 
             $("#tale1").empty().append(data);

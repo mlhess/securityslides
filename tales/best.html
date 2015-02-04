@@ -1,8 +1,64 @@
 <section>
-<h2> Best</h2>
+    <h2>Do You Brush Your Teeth Daily?</h2>
+    <iframe src="https://respconf.sites.uofmhosting.net/node/77/graph" width="100%" height="900px"></iframe>
+</section>
+<section>
+    <h4>Brushing your teeth is a best practice.</h4>
+    <p>For security, you can't check a list and be done.</p>
+    <p>You must keep working at it. It is a process, not a one-time task.</p>
+    <p class="fragment"> Which is why I hope everyone brushes their teeth. </p>
+    <img class="fragment" src="images/michigan/badmouth.jpg" width="60%">
+</section>
+<section>
+    <h2>Some Best Practices</h2>
+    <p>Only use encrypted protocols.</p>
+    <p>https/ftps/ssh/etc</p>
+    <p>  Every change you make might impact the security of your site. Therefore, security needs to be in your workflow.</p>
+    <p>Use supported versions (Soon time to update Drupal 6)</p>
+    <p><b>Take and verify backups.</b></p>
+</section>
+<section>
+    <h1>Keep Your Site Updated</h1>
+    <p>Always make sure you update after a security release comes out. </p>
+</section>
+<section>
+    <h2>Know Your Risk Level</h2>
+    <p>
+        Blog vs. complex site. Your blog is likely to be compromised to send spam or to act in part of a bot net.
+    </p>
+    <p> Your complex site might be compromised for the data it has. </p>
+    <p> Security is a balance.</p>
+    <P> Is your site a target?</P>
+</section>
+<section>
+    <h2>Regulations</h2>
+    <h3>PCI, HIPAA, SCADA, XYZ, PDQ</h3>
+    <p>You might have legal requirements imposed by the data you keep.</p>
+</section>
+<section>
+    <h2>Do Not Use insecure hosting</h2>
+    <p> Use a dedicated Drupal hosting provider.  </p>
+    <p> Shared hosting normally runs the webserver as the owner of the file system (cpanel). </p>
+    <p> Multiple sites on a server often use a common account for all sites. (www-data, nobody, etc)  </p>
 </section>
 
 <section>
-    <h2> Best 1B</h2>
+    <h2>Do Not Use Multisite</h2>
+    <p>Unless you have a deep understanding of apache/nginx and file permissions, multisite is  insecure. </p>
 </section>
-
+<section>
+    <h2>Use a Module that Enhances Security in Your Site</h2>
+    <p>Paranoia: Locks your site down.</p>
+    <p>Security Review: Runs a checklist of items and confirms your site adheres to them.</p>
+    <p>Permissions Lock: Finer-grained permissions over what users with 'administer permissions' can do. </p>
+    <p>Two-Factor Authentication: Something you know, and something you have.</p>
+    <p>Hacked! Tells if code has been changed.</p>
+    <p>Password Policy: Enforces strong passwords.</p>
+</section>
+<section>
+    <h3> Other Security Vulnerabilities</h3>
+    <p>While XSS/CSRF/access bypass may be harder to mass attack, but an attacker can still compromise a site with them.
+        The security team  releases SA's on Wednesdays, set time aside to update your sites (or pay someoene to do it for you). </p>
+    <img class="fragment" src="images/michigan/filtering_text.png">
+    <p class="fragment"> Details on these vulnerabilities are outside the scope of this talk. </p>
+</section>
