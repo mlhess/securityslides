@@ -1,0 +1,153 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Michigan Drupal Camp 2015</title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+    <link rel="stylesheet" href="customcss/css/screen.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <script src="js/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>Security Tales from the Field</h2><h2>and security best practices. </h2>
+            <h3>Michael Hess</h3>
+        </section>
+
+            <section>
+                <h2>Michael Hess</h2>
+                <p>
+                    Current Drupal Security Team Lead.
+                </p>
+                <p>
+                    Solutions architect lead at the University of Michigan.
+                </p>
+                <p>
+                    Supports around 1200 Drupal sites.
+                </p>
+
+                <h6><a href="https://twitter.com/mlh407">Twitter: @mlh407</a></h6>
+                <aside class="notes">
+                    9 years in Drupal
+                    5 years on the secteam
+                    build/consult on  around 100 sites yearly
+                    drupal 4.6(ish)
+                </aside>
+            </section>
+        <section>
+            <h2>Agenda</h2>
+            <p>The tale of the X</p>
+            <p>The tale of the X</p>
+            <p>The tale of the X</p>
+            <p>The tale of the X</p>
+            <p>Overview of Drupal security and the Drupal security team</p>
+            <p>Overview of best practices</p>
+        </section>
+
+        <section>
+            <h2>Do You Brush Your Teeth Daily?</h2>
+            <p>Please text: 734-821-5212</p>
+            <table class="answertable sticky-enabled">
+                <thead><tr><th>Answer Choice</th><th>Text Code:</th> </tr></thead>
+                <tbody>
+                <tr class="odd"><td>Yes</td><td>4483</td> </tr>
+                <tr class="even"><td>No</td><td>2983</td> </tr>
+                <tr class="odd"><td>I don&#039;t have any. </td><td>6276</td> </tr>
+                </tbody>
+            </table>
+            <h6> We will discuss this later.</h6>
+        </section>
+        <section id="tale1">
+
+        </section>
+        <section id="tale2">
+
+        </section>
+        <section id="tale3">
+
+        </section>
+        <section id="tale4">
+
+        </section>
+        <section id="best">
+
+        </section>
+
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    $( document ).ready(function() {
+        $.get('tales/tale1.html', function (data) {
+
+            $("#tale1").empty().append(data);
+        });
+        $.get('tales/tale2.html', function (data) {
+
+            $("#tale2").empty().append(data);
+        });
+        $.get('tales/tale3.html', function (data) {
+
+            $("#tale3").empty().append(data);
+        });
+        $.get('tales/tale4.html', function (data) {
+
+            $("#tale4").empty().append(data);
+        });
+        $.get('tales/best.html', function (data) {
+
+            $("#best").empty().append(data);
+        });
+
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [
+
+                {
+                    src: 'lib/js/classList.js', condition: function () {
+                    return !document.body.classList;
+                }
+                },
+                {
+                    src: 'plugin/markdown/marked.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+                },
+                {
+                    src: 'plugin/markdown/markdown.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+                },
+                {
+                    src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                    return !!document.querySelector('pre code');
+                }, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+                },
+                {src: 'plugin/zoom-js/zoom.js', async: true},
+                {src: 'plugin/notes/notes.js', async: true}
+            ]
+        });
+    });
+</script>
+</body>
+</html>
