@@ -9,26 +9,26 @@
 
     <p>The site was first brought online on November 15th, 2012 </p>
 
-    <p> The site has around 300 order per month</p>
+    <p class='fragment'> The site has around 300 orders per month</p>
 
-    <p> The company that built the site hired a devshop that did not provide support after the site went live</p>
+    <p class='fragment'> The company that built the site hired a devshop that did not provide support after the site went live</p>
 
-    <p> The company did not have a full time web person on staff</p>
+    <p class='fragment'> The company did not have a full time web person on staff</p>
 </section>
 <section>
     <h2>On a cold dark Monday</h2>
 
-    <p> The book keeper noticed that they were not getting money in their account.</p>
+    <p class='fragment'> The book keeper noticed that they were not getting money in their account.</p>
 
-    <p> Their order volume did not change</p>
+    <p class='fragment'> Their order volume did not change</p>
 
-    <p> She called the credit card company who said that they had not gotten any orders in the last 2 weeks.</p>
+    <p class='fragment'> She called the credit card company who said that they had not gotten any orders in the last 2 weeks.</p>
 
-    <p> She went online and placed an order,it seemed to work as it should.</p>
+    <p class='fragment'> She went online and placed an order,it seemed to work as it should.</p>
 
-    <p> She was very confused</p>
+    <p class='fragment'> She was very confused</p>
 
-    <p> The date was March 11th, 2013 </p>
+    <p class='fragment'> The date was March 11th, 2013 </p>
 </section>
 <section>
     <h2>On a colder darker Tuesday</h2>
@@ -50,27 +50,27 @@
 <section>
     <h2>What happened</h2>
 
-    <p> Somehow a the URL for the payment gateway was changed in the Ubercart configuration</p>
+    <p class='fragment'> Somehow a the URL for the payment gateway was changed in the Ubercart configuration</p>
 
-    <p> The company they hired started to look at server logs and found that there was a change to this URL, by someone
+    <p class='fragment'> The company they hired started to look at server logs and found that there was a change to this URL, by someone
         at the company's IP address</p>
 </section>
 <section>
     <h2>What really happened</h2>
 
-    <p> Someone had used a security vulnerability in Ubercart and added Javascript in a field</p>
+    <p class='fragment'> Someone had used a security vulnerability in Ubercart and added Javascript in a field</p>
 
-    <p> Normally the javascript would be escaped, but since the site was not patched for SA-CONTRIB-2013-020 - Ubercart
+    <p class='fragment'> Normally the javascript would be escaped, but since the site was not patched for SA-CONTRIB-2013-020 - Ubercart
         - Cross site scripting (XSS), the javascript executed</p>
 </section>
 
 <section>
     <h2>Lessons Learned </h2>
 
-    <p> Always update your site when the security team releases an update. (https://www.drupal.org/security) </p>
+    <p class='fragment'> Always update your site when the security team releases an update. (https://www.drupal.org/security) </p>
 
-    <p> If you are dealing with sensitive data (credit card numbers) make sure you have the staff to do so, otherwise
+    <p class='fragment'> If you are dealing with sensitive data (credit card numbers) make sure you have the staff to do so, otherwise
         think about outsourcing everything. </p>
 
-    <p> If collecting monies, check more often then every 2 weeks</p>
+    <p class='fragment'> If collecting monies, check more often then every 2 weeks</p>
 </section>

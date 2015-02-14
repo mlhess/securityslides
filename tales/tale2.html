@@ -1,5 +1,90 @@
 <section>
+    <h2>The tale of the new site. </h2>
 
+    <p> Our second tale is that of a site that was not in production. The site (at a brand new domain) was provisioned
+        48 hours before it was hacked. </p>
+</section>
+<section>
+    <h2>Background</h2>
+
+    <p> A new domain was order and a site setup on that domain name. </p>
+
+    <p> The site had all up to date modules installed and an up to date core</p>
+
+    <p> The site as going to be a brochure type site with only one login account. Think a basic corporate site.</p>
+</section>
+<section>
+    <h2>On the 3rd day of development</h2>
+
+    <p class="fragment">The content manager was going to setup content and notice the site had porn</p>
+
+    <p class="fragment"> The content manager was not happy</p>
+    <img class="fragment" src="/tales/images/madcat.jpg" cite="http://pixabay.com/"/>
+</section>
+<section>
+    <h2>What?</h2>
+
+    <p>The content manager called her IT person, who started looking at logs to see how an up to date Drupal site got
+        compromised. </p>
+
+    <p>The IT manager pulled the access logs for the server and found only trusted IP's accessed the site. </p>
+
+    <p> The IT manager had no idea how it happened so he restored a backup</p>
 </section>
 
+<section>
+    <h2> 2 days later</h2>
 
+    <p>More porn spam</p>
+
+    <p>The content manager lost all of her old work.</p>
+    <img src="/tales/images/nakecat.jpg"/>
+</section>
+
+<section>
+    <h2>The IT admin searched the logs again</h2>
+
+    <p> Found only the same trusted IP's</p>
+
+    <p> Only computers inside of the office had accessed the site</p>
+
+    <p> Ran a virus scan on the computers that had accessed the site</p>
+
+    <p> The scan was clean</p>
+
+    <p> The IT admin had no idea what was going on....</p>
+</section>
+
+<section>
+    <h2>Any Ideas?</h2>
+
+    <p> Somehow a the URL for the payment gateway was changed in the Ubercart configuration</p>
+
+</section>
+<section>
+    <h2>Apache single user</h2>
+
+    <p> By default apache on most OS's will run as a single user </p>
+
+    <p> That user has access to READ all the files for all sites on the system</p>
+</section>
+<section>
+    <h2>What happened</h2>
+
+    <p> Someone had compromised another site on the server.</p>
+
+    <p> Using that site, they were able to read settings.php and connect to the new Drupal site's database</p>
+
+    <p> They were able to inject spam by updating the table directly</p>
+
+    <p>The script used search the entire file system for settings.php and then ran commands to update the database</p>
+</section>
+<section>
+    <h2>Lessons Learned </h2>
+
+    <p> Do not allow a single apache instance to access multiple sites. Configure privilege separation </p>
+
+    <p> Be-careful of using shared hosting without proper configuration</p>
+
+    <p> Don't bring a site back online after a compromise unless you understand how and prevented future compromises</p>
+</section>
