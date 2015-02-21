@@ -1,13 +1,78 @@
 <section>
+    <h2> Best Practice</h2>
+    <p> a quick overview</p>
+</section>
+<section>
     <h2>Do You Brush Your Teeth Daily?</h2>
     <iframe src="https://respconf.sites.uofmhosting.net/node/77/graph" width="100%" height="900px"></iframe>
 </section>
 <section>
     <h4>Brushing your teeth is a best practice.</h4>
-    <p>For security, you can't check a list and be done.</p>
-    <p>You must keep working at it. It is a process, not a one-time task.</p>
+    <p class="fragment">For security, you can't check a list and be done.</p>
+    <p class="fragment">You must keep working at it. It is a process, not a one-time task.</p>
     <p class="fragment"> Which is why I hope everyone brushes their teeth. </p>
     <img class="fragment" src="images/michigan/badmouth.jpg" width="60%">
+</section>
+<section>
+    <h2> Follow the Drupal Security Team</h2>
+    <ul>
+        <li>On Twitter (twitter.com/drupalsecurity)</li>
+        <li>Via email (on your drupal.org user edit page under newsletters</li>
+        <li>Via Web (drupal.org/security and drupal.org/security/contrib</li>
+    </ul>
+</section>
+<section>
+    <h2> If you find a security issue..</h2>
+    <p> Or think you find a security issue, report it to the team (security@drupal.org) </p>
+</section>
+<section>
+    <h2>Site builders and module authors </h2>
+    <p> Writing secure code: https://www.drupal.org/writing-secure-code</p>
+    <p>How to secure your site: https://www.drupal.org/security/secure-configuration</p>
+</section>
+<section>
+    <h2>Security Process</h2>
+    <ol>
+        <li>A vulnerability is discovered in code.</li>
+        <li>An issue is reported to the security team.</li>
+        <li>An issue is confirmed to be valid in a supported release eligible for an SA.</li>
+        <li> The security team and the maintainer of the code fix the issue.</li>
+        <li>A Security Advisory is written and the fix is published. Notifications about the issue go out via
+            Twitter/RSS/email.
+        </li>
+    </ol>
+    <h3>Subscribe to the Security Team newsletter via "my newsletter" under edit on www.drupal.org/user.</h3>
+</section>
+<section cite="https://www.owasp.org/index.php/Top10#OWASP_Top_10_for_2013">
+    <h3>Common Web Vulnerabilities</h3>
+    <h4>From Open Web Application Security Project</h4>
+    <ol>
+        <li>Injection such as SQL, OS, and LDAP injection.</li>
+        <li>Broken Authentication and Session Management.</li>
+        <li>Cross-Site Scripting (XSS).</li>
+        <li>Insecure Direct Object References.</li>
+        <li>Security Misconfiguration.</li>
+        <li>Sensitive Data Exposure.</li>
+        <li>Missing Function Level Access Control (access bypass).</li>
+        <li>Cross-Site Request Forgery.</li>
+        <li>Using Components with Known Vulnerabilities.</li>
+        <li>Unvalidated Redirects and Forwards.</li>
+    </ol>
+</section>
+<section>
+    <h2>Using Components with Known Vulnerabilities</h2>
+    <p>Do you use third-party libraries?</p>
+</section>
+
+<section>
+    <h2> Common Drupal Vulnerabilities from 2014</h2>
+    <img src="images/michigan/vulns-2014">
+    <ol>
+        <li>61 - Cross Site Scripting.</li>
+        <li>42 - Access Bypass.</li>
+        <li>13- Information Disclosure.</li>
+        <li>4 - Cross-Site Request Forgery.</li>
+    </ol>
 </section>
 <section>
     <h2>Some Best Practices</h2>
@@ -36,7 +101,7 @@
     <p>You might have legal requirements imposed by the data you keep.</p>
 </section>
 <section>
-    <h2>Do Not Use insecure hosting</h2>
+    <h2>Do not use insecure hosting</h2>
     <p> Use a dedicated Drupal hosting provider.  </p>
     <p> Shared hosting normally runs the webserver as the owner of the file system (cpanel). </p>
     <p> Multiple sites on a server often use a common account for all sites. (www-data, nobody, etc)  </p>
@@ -55,10 +120,13 @@
     <p>Hacked! Tells if code has been changed.</p>
     <p>Password Policy: Enforces strong passwords.</p>
 </section>
+<!--
 <section>
     <h3> Other Security Vulnerabilities</h3>
-    <p>While XSS/CSRF/access bypass may be harder to mass attack, but an attacker can still compromise a site with them.
+    <p>While XSS/CSRF/access bypass may be harder to mass attack, then say sql injection, but an attacker can still compromise a site with them.
         The security team  releases SA's on Wednesdays, set time aside to update your sites (or pay someoene to do it for you). </p>
     <img class="fragment" src="images/michigan/filtering_text.png">
     <p class="fragment"> Details on these vulnerabilities are outside the scope of this talk. </p>
 </section>
+
+->

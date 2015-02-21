@@ -129,3 +129,8 @@ iframe {
   bottom: 0px;
   position: absolute;
 }
+
+/* line 52, ../sass/screen.scss */
+table {
+  color: white;
+}

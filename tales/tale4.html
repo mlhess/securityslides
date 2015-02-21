@@ -1,8 +1,71 @@
 <section>
-<h2> Tale 4</h2>
+<h2>The most familiar tale</h2>
+<p>Due to a recent major vulnerability in Drupal Core, SQL injection was possible.</p>
+
+</section>
+<section>
+    <h2> SA05</h2>
+    <p> There was a large number of sites compromised due to SA05.  Rather then a story, we will discuss common patterns</p>
 </section>
 
 <section>
-    <h2> Tale 4B</h2>
+    <h2> SQL Injection is Easy to Exploit</h2>
+
+    <p> Most of the time SQL injection is easy to exploit.</p>
+
+    <p>Other vulnerabilities may require different actors to engage in actions timed correctly.</p>
+
+    <p> SQL injection can be exploited most of the time, by just an attacker.</p>
+</section>
+<section>
+    <h2> So?</h2>
+
+    <p>SQL injection lets an attacker have the same access to your database that Drupal has. </p>
+
+    <p class="fragment">Allows an attacker to add a user and modify users' roles. </p>
+
+    <p class="fragment">Allows an attacker to change passwords and email addresses. </p>
+
+    <p class="fragment">Allows an attacker to update URL's to payment pages. </p>
+
+    <p class="fragment">Allows an attacker to change content. </p>
+
+    <p class="fragment">Anything that can be done via the web interface, an attacker can do.</p>
+</section>
+<section>
+    <h2>Common Attack Patterns</h2>
+    <p>Changing password or email address on uid=1.</p>
+    <p>Adding files to the file system via the menu_router table and file_put_contents.</p>
+    <p>Adding a user and giving that user admin access.</p>
+    <p>Installing a PHP backdoor by enabling the PHP module and creating a node with PHP in it.</p>
+    <p>Patching the vulnerability</p>
+    <p>Many, many more ...</p>
+</section>
+<section>
+    <h2>Drupal's Database API</h2>
+
+    <p>When used correctly, the database API prevents SQL injection. </p>
+
+    <p class="fragment">In the case of SA05/drupalgeddon, the database API is where the vulnerability was.</p>
+
+    <p class="fragment">Oh, the irony.</p>
+</section>
+<section>
+    <h2>The patch</h2>
+           					<pre>
+                                <code data-trim contenteditable>
+- foreach ($data as $i => $value) {
++ foreach (array_values($data) as $i => $value) {
+                                </code>
+                           </pre>
+
 </section>
 
+
+
+<section>
+    <h2>Some Perspective</h2>
+    <p> This was a major vulnerability, but let's keep in mind that the last major issue was over 7 years ago. </p>
+    <p> This code has been in Drupal since Drupal 7 Beta's. </p>
+    <p>Nothing is 100% sure, and nothing ever will be.  We mitigate risk by using best practices.</p>
+</section>
