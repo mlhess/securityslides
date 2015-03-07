@@ -1,8 +1,9 @@
 <section>
-    <h2>The tale of the shoe store</h2>
+    <h2>The tale of Fitzgerald's shoe store</h2>
 
     <p> Our first tale is that of a where you can order products. This site takes orders and redirects you to a 3rd
         party for payment. This keeps the site PCI compliant. </p>
+    <img src="tales/images/shoe.jpg" width="30%">
 </section>
 <section>
     <h2>Background</h2>
@@ -11,14 +12,14 @@
 
     <p class='fragment'> The site has around 300 orders per month</p>
 
-    <p class='fragment'> The company that built the site hired a devshop that did not provide support after the site went live</p>
+    <p class='fragment'> Fitzgerald's shoe store hired a devshop that did not provide support after the site went live</p>
 
-    <p class='fragment'> The company did not have a full time web person on staff</p>
+    <p class='fragment'> Fitzgerald's shoe store did not have a full time web person on staff</p>
 </section>
 <section>
     <h2>On a cold dark Monday</h2>
 
-    <p class='fragment'> The book keeper noticed that they were not getting money in their account.</p>
+    <p class='fragment'> Myrtle Wilson, book keeper noticed that they were not getting money in their account.</p>
 
     <p class='fragment'> Their order volume did not change</p>
 
@@ -31,11 +32,10 @@
     <p class='fragment'> The date was March 11th, 2013 </p>
 </section>
 <section>
-    <h2>On a colder darker Tuesday</h2>
+    <h2>On a colder darker Tuesday, they got help</h2>
 
-    <p>They called a company who came and saw that their payment gateway URL, was not a valid URL. </p>
+    <p>Fitzgerald's shoe store in a expert, Jordan Baker, who analyzed the site.  He found that their payment gateway URL, was not pointing to their payment gateway </p>
 
-    <p>The normal workflow is </p>
 </section>
 
 <section>
@@ -50,27 +50,27 @@
 <section>
     <h2>What happened</h2>
 
-    <p class='fragment'> Somehow a the URL for the payment gateway was changed in the Ubercart configuration</p>
+    <p class='fragment'> Somehow the URL for the payment gateway was changed in the Ubercart configuration</p>
 
-    <p class='fragment'> The company they hired started to look at server logs and found that there was a change to this URL, by someone
+    <p class='fragment'> Jordan Baker started to look at server logs and found that there was a POST request on the page to change this URL by someone
         at the company's IP address</p>
+    <p class='fragment'>
+        Myrtle was fired as the IP was her computer's address.
+    </p>
 </section>
 <section>
     <h2>What really happened</h2>
-
+    <p class='fragment'> Jordan Baker started to dig more and found...</p>
     <p class='fragment'> Someone had used a security vulnerability in Ubercart and added Javascript in a field</p>
-
     <p class='fragment'> Normally the javascript would be escaped, but since the site was not patched for SA-CONTRIB-2013-020 - Ubercart
         - Cross site scripting (XSS), the javascript executed</p>
 </section>
 
 <section>
     <h2>Lessons Learned </h2>
-
     <p class='fragment'> Always update your site when the security team releases an update. (https://www.drupal.org/security) </p>
-
     <p class='fragment'> If you are dealing with sensitive data (credit card numbers) make sure you have the staff to do so, otherwise
         think about outsourcing everything. </p>
-
     <p class='fragment'> If collecting monies, check more often then every 2 weeks</p>
+    <p class='fragment'>XSS can do a lot of damage.</p>
 </section>
