@@ -11,10 +11,7 @@
     <h2>The Non-profit horror story</h2>
     <p>Like all Drupal sites, this Drupal site had many modules</p>
 </section>
-<section>
-    <h2>The Non-profit horror story</h2>
-    <p> This module also had  many libraries installed in /sites/all/libraries</p>
-</section>
+
 
 
 <section>
@@ -22,12 +19,14 @@
     <p class="fragment">All modules were up to date.</p>
     <p class="fragment"> There were no known vulnerabilities in any of the modules used, that would have allowed for a PHP shell to be uploaded. </p>
     <p class="fragment"> Jack Merridew, the head of their webteam was able to see the php script was used to copy down the users tables.  </p>
+
+</section>
+<section>
+    <h2>hacked</h2>
     <p class="fragment"> It may have been able to download  more parts of the database, but the attacker only left a copy of the users table behind.  </p>
     <p class="fragment"> The PHP script that was uploaded allowed the attacker to have file system access (download any file including files from Drupal's private file system.  </p>
     <p class="fragment"> It also allowed the attacker to run and display the results of SQL queries.   </p>
-
 </section>
-
 <section>
     <h2>Quick Break Module updates</h2>
     <p>Please text: 734-821-5212</p>
@@ -51,7 +50,9 @@
     <h2> A module used a 3rd party library</h2>
     <p>The library was updated, however, unless you deleted the old version before installing the new version, you were still vulnerable</p>
 </section>
-
+<section>
+    <img src="tales/images/hacked.png">
+</section>
 
 <section>
     <h2>Lessons learned</h2>
