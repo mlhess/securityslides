@@ -1,87 +1,85 @@
 <section>
-    <h2>The tale of the new site. </h2>
-    <p> Harpers's LLC, a small development company in Alabama, started work on a new website</p>
-    <p> The site (at a brand new domain) was provisioned 48 hours before it was hacked. </p>
-    <p> The site was in maintenance mode</p>
+    <h2>The Tale of the Ghost in the Website </h2>
+    <p> Our second tale is about Harpers' LLC, a small web development company in upstate New York based out of a stately old house.</p>
+    <p> Harpers had just started work on a new site two days before. The site was provisioned at a brand-new domain. It was in maintenance mode. </p>
+    <p>Despite all this, the site was hacked. But how?</p>
 
 </section>
 <section>
     <h2>Background</h2>
 
-    <p> A new domain was ordered and a site setup on that domain name. </p>
+    <p>The site was set up with a newly ordered domain name.</p>
 
-    <p> The site had all up to date modules installed and an up to date core</p>
+    <p> The site’s modules and core install were all up to date.</p>
 
-    <p> The site was being designed to be a brochure type site with only one admin account. Think a basic corporate site.</p>
-    <p> This was setup on a new development server, dedicated to dev sites for Harpers's LLC</p>
+    <p> The site was a simple brochure-type site with only one admin account.</p>
+    <p> The site was set up on a new development server, dedicated just to Harpers’ dev sites</p>
 </section>
 <section>
-    <h2>On the 3rd day of development</h2>
+    <h2>How It Began …</h2>
 
-    <p class="fragment">Jeremy, the  content manager, was going to setup content types and noticed the site had porn all over the front page</p>
+    <p class="fragment">On the third day of developing the site, Jeremy, the  content manager, was going to set up the content types.</p>
 
-    <p class="fragment"> Jeremy was not happy</p>
+    <p class="fragment"> He stopped in horror. The site had porn all over the front page.</p>
+    <p class="fragment">Jeremy was not happy.</p>
     <img class="fragment" src="tales/images/madcat.jpg" cite="http://pixabay.com/"/>
 </section>
 <section>
-    <h2>What?</h2>
+    <h2>What’s Going On?</h2>
 
-    <p>Jeremy called the in  house IT person, Jean , who started looking at logs to see how an up to date Drupal site got
-        compromised. </p>
+    <p>Jeremy called Jean, in-house IT person, who began looking at logs to see how an up-to-date Drupal site got compromised. </p>
 
-    <p>Jean pulled the access logs for the site and found only known trusted  IP's accessed the site. </p>
+    <p>On a gray and windy day at the old Harpers’ house, Jean pulled the access logs for the site.  </p>
 
-    <p> Jean had no idea how it happened so she restored a backup</p>
+    <p> But she found only known and trusted IP addresses had accessed the site.</p>
+    <p>Jean had no idea what had happened, so she restored a backup.</p>
 </section>
 
 <section>
-    <h2> 2 days later</h2>
+    <h2> Two Days Later …</h2>
 
-    <p>More porn spam</p>
+    <p>Jeremy checked the site again. More porn spam.</p>
 
-    <p>Jeremy lost all of his work.</p>
+    <p>And he lost all his work.</p>
     <img src="tales/images/nakecat.jpg"/>
 </section>
 
 <section>
-    <h2>Jean searched the logs again</h2>
+    <h2>Jean searched the logs again — and found only the same trusted IP’s.</h2>
 
-    <p> Found only the same trusted IP's</p>
+    <p> Only computers inside of Harpers' office had accessed the site.</p>
 
-    <p> Only computers inside of Harpers's LLC offices had accessed the site</p>
+    <p> Jean ran a virus scan on the computers that had accessed the site.</p>
 
-    <p> Jean ran a virus scan on the computers that had accessed the site</p>
+    <p> The scan was clean.</p>
 
     <p> The scan was clean</p>
 
-    <p> Jean had no idea what was going on....</p>
+    <p> Jean had no idea what was going on.</p>
 </section>
 
 <section>
-    <h2>Any Ideas?</h2>
-    <p class="fragment">Is there a ghost?</p>
+    <h2>Was the site haunted?</h2>
     <img class="fragment" src="tales/images/ghostcat.jpg" cite="http://fc08.deviantart.net/fs70/i/2012/076/a/9/ghost_cat_by_vejur-d4t1t15.jpg">
 
 </section>
 <section>
-    <h2>Apache single user</h2>
-
+    <h2>Jean did not know</h2>
     <p> By default apache on most OS's will run as a single user </p>
-
     <p> That user has access to READ all the files for all sites on the system</p>
 
 </section>
 <section>
-    <h2>What happened</h2>
+    <h2>What Happened …</h2>
+    <p> So, it wasn’t a ghost.</p>
     <p> Someone had compromised another site on the server.</p>
-    <p> Using that site, they were able to read settings.php and connect to the new Drupal site's database</p>
-    <p> They were able to inject spam by updating the table directly</p>
-    <p>The attacker search the entire file system for settings.php and then ran commands to update the database on any site they found. </p>
+    <p> Using that site, they were able to read settings.php and connect to the new Drupal site's database.</p>
+    <p> They were able to inject spam by updating the table directly. The attacker searched the entire file system for settings.php and then ran commands to update the database on any site they found. </p>
 </section>
 <section>
     <h2>Lessons Learned </h2>
     <p> Do not allow a single apache instance to access multiple sites. Configure privilege separation. </p>
     <p> Apache config is outside the scope of this presentation, but look into suphp, php-fpm and mod-itk </p>
-    <p> Be-careful of using shared hosting without proper configuration</p>
-    <p> Don't bring a site back online after a compromise unless you understand how and prevented future compromises</p>
+    <p> Be careful of using shared hosting without proper configuration.</p>
+    <p>Don't bring a site back online after a compromise unless you understand how it was hacked, and how to prevent future compromises.</p>
 </section>

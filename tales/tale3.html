@@ -1,31 +1,25 @@
 <section>
-    <h2>The Non-profit horror story</h2>
+    <h2>The Tale of the Poisoned update</h2>
     <p>Our third tale is short. </p>
-    <p> It starts with a non-profit's website.</p>
-    <p> This non profit was dedicated to making sure flies do not go extinct </p>
-    <p>The non profit had a dedicated web team.</p>
+    <p> It begins with a website for the nonprofit Friends of the Library.</p>
+    <p> This nonprofit raised money to buy books for its local libraries.</p>
     <img src="images/donate.jpg"  cite="http://www.jccns.org/wp-content/uploads/2011/12/donate-730x250.jpg">
 </section>
 
 <section>
-    <h2>The Non-profit horror story</h2>
-    <p>Like most Drupal sites, this Drupal site had many modules</p>
-</section>
+    <h2>One Day …</h2>
 
-
-
-<section>
     <h2> The site got compromised, and a PHP shell script was uploaded</h2>
     <p class="fragment">All modules were up to date.</p>
-    <p class="fragment"> There were no known vulnerabilities in any of the modules used, that would have allowed for a PHP shell to be uploaded. </p>
-    <p class="fragment"> Jack Merridew, the head of their webteam was able to see the php script was used to copy down the users table.  </p>
+    <p class="fragment"> There were no known vulnerabilities in any of the modules that would have allowed for a PHP shell to be uploaded. </p>
 
 </section>
 <section>
-    <h2>hacked</h2>
-    <p class="fragment"> It may have been able to download  more parts of the database, but the attacker only left a copy of the users table behind.  </p>
-    <p class="fragment"> The PHP script that was uploaded allowed the attacker to have file system access (download any file including files from Drupal's private file system).  </p>
-    <p class="fragment"> It also allowed the attacker to run and display the results of SQL queries.   </p>
+    <h2>What Was Found …</h2>
+    <p class="fragment">   Jack Merridew, the head of their webteam was able to see the php script was used to copy down the users table.  </p>
+    <p class="fragment"> While the script may have been able to download more parts of the database, the attacker left behind only a copy of the users table.  </p>
+    <p class="fragment"> The PHP script that was uploaded allowed the attacker to have file system access — the attacker could download any file, including files from Drupal's private file system. </p>
+    <p class="fragment"> It also allowed the attacker to run and display the results of SQL queries.</p>
 </section>
 <section>
     <h2>Quick Break: Module updates</h2>
@@ -47,8 +41,8 @@
 </section>
 
 <section>
-    <h2> A module used a 3rd party library</h2>
-    <p>The library was updated. Unless you deleted the old version before installing the new version, you are still vulnerable.</p>
+    <h2> The Poisoned Library</h2>
+    <p>A library from a module update was removed from the module.  However, Jack only downloaded the new module, and did not remove the old module before updating. </p>
 </section>
 <section>
     <img src="tales/images/hacked.png">
