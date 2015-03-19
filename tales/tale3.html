@@ -7,22 +7,22 @@
 </section>
 
 <section>
-    <h2>One Day …</h2>
+    <h2>One Day…</h2>
 
-    <h2> The site got compromised, and a PHP shell script was uploaded</h2>
+    <h2> The site got compromised, and a PHP shell script was uploaded.</h2>
     <p class="fragment">All modules were up to date.</p>
     <p class="fragment"> There were no known vulnerabilities in any of the modules that would have allowed for a PHP shell to be uploaded. </p>
 
 </section>
 <section>
-    <h2>What Was Found …</h2>
+    <h2>What Was Found…</h2>
     <p class="fragment">   Jack Merridew, the head of their webteam was able to see the php script was used to copy down the users table.  </p>
     <p class="fragment"> While the script may have been able to download more parts of the database, the attacker left behind only a copy of the users table.  </p>
     <p class="fragment"> The PHP script that was uploaded allowed the attacker to have file system access — the attacker could download any file, including files from Drupal's private file system. </p>
     <p class="fragment"> It also allowed the attacker to run and display the results of SQL queries.</p>
 </section>
 <section>
-    <h2>Quick Break: Module updates</h2>
+    <h2>Quick Break: Module Updates</h2>
     <p>Please text: 734-821-5212</p>
 
     <table class="answertable sticky-enabled">
@@ -36,22 +36,22 @@
 
 </section>
 <section>
-    <h2> Module updates</h2>
+    <h2> Module Updates</h2>
     <iframe src="https://respconf.sites.uofmhosting.net/node/78/graph" width="100%" height="900px"></iframe>
 </section>
 
 <section>
     <h2> The Poisoned Library</h2>
-    <p>A library from a module update was removed from the module.  However, Jack only downloaded the new module, and did not remove the old module before updating. </p>
+    <p>A library from a module update was removed from the module. However, Jack only downloaded the new module, and did not remove the old module before updating. </p>
 </section>
 <section>
     <img src="tales/images/hacked.png">
 </section>
 
 <section>
-    <h2>Lessons learned</h2>
-    <p>Remove the library/module/theme before updating. This ensures that all old files are removed</p>
-    <p>Configure PHP so it will not execute code from directories it should not (sites/*/files) </p>
-    <p>Prevent the webserver from writing to directories that are not (sites/*/files) </p>
+    <h2>Lessons Learned</h2>
+    <p>Remove the library/module/theme before updating. This ensures that all old files are removed.</p>
+    <p>Configure PHP so it will not execute code from directories it should not (sites/*/files). </p>
+    <p>Prevent the webserver from writing to directories that are not (sites/*/files). </p>
     <p> The security_review module can help with this.</p>
 </section>
