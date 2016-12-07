@@ -2,4 +2,4 @@ To get this working locally, you will need to start a server.  In the directory 
 
 php -S localhost:8080
 
-Then visit http://localhost:8080 in your browser.
+Then visit http://localhost:8080/tales.html in your browser.
